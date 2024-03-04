@@ -11,6 +11,17 @@ export default {
 
     theme: {
         extend: {
+            colors: {
+                /*
+                 * Palete de cores
+                 */
+                'my-soft-beige': '#F5F5DC',
+                'my-light-gray': '#D3D3D3',
+                'my-light-brown': '#D2B48C',
+                'my-dark-gray': '#808080',
+
+                'my-moss-green': '#ADFF2F',
+            },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
