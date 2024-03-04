@@ -13,14 +13,27 @@ export default {
         extend: {
             colors: {
                 /*
-                 * Palete de cores
+                 * Paleta de cores
+                 *
+                 * Tema claro
                  */
-                'my-soft-beige': '#F5F5DC',
-                'my-light-gray': '#D3D3D3',
-                'my-light-brown': '#D2B48C',
-                'my-dark-gray': '#808080',
-
-                'my-moss-green': '#ADFF2F',
+                'beige': '#F5F5DC', // Fundo
+                'light-gray': '#D3D3D3', // Fundo alternativo
+                'light-brown': '#A52A2A', // Texto
+                'light-green': '#90EE90', // Destques
+                'white': '#FFFFFF',
+                /*
+                 * Tema escuro
+                 */
+                'dark-brown': '#654321', // Fundo
+                'dark-gray': '#696969', // Fundo alternativo
+                'dark-green': '#006400', // texto
+                'black': '#000000',
+                /*
+                 * Cores de destaque
+                 */
+                'deep-green': '#008000', // Destaues | Links ou botões
+                'rich-brown': '#8B4513' // Links ou botões
             },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
