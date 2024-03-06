@@ -10,6 +10,31 @@
                         {{ __('Home') }}
                     </x-nav-link>
                 </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('home')" :active="request()->routeIs('projetos')">
+                        {{ __('Projetos') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('home')" :active="request()->routeIs('experiencias')">
+                        {{ __('Experiencias') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('home')" :active="request()->routeIs('conhecimentos')">
+                        {{ __('Conhecimentos') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('home')" :active="request()->routeIs('contatos')">
+                        {{ __('Contato') }}
+                    </x-nav-link>
+                </div>
+
             </div>
         </div>
     </div>
