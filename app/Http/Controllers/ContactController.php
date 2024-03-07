@@ -33,7 +33,7 @@ class ContactController extends Controller
     public function show(Contact|int $contactId): View
     {
         $contact = $this->contactRepository->getModelByid($contactId);
-        return view('contacts.show', compact('contact'));
+        return view('contact.show', compact('contact'));
     }
 
     /**
@@ -44,7 +44,7 @@ class ContactController extends Controller
     public function store(ContactFormRequest $contactDetails): RedirectResponse
     {
         $this->contactRepository->createModel($contactDetails->safe()->toArray());
-        return redirect()->route('contacts.index');
+        return redirect()->route('contact.index');
     }
 
     /**
@@ -55,7 +55,7 @@ class ContactController extends Controller
     public function update(ContactFormRequest $contactDetails, Contact|int $contactId): RedirectResponse
     {
         $this->contactRepository->updateModel($contactDetails->safe()->toArray(), $contactId);
-        return redirect()->route('contacts.index');
+        return redirect()->route('contact.index');
     }
 
     /**
@@ -66,7 +66,7 @@ class ContactController extends Controller
     public function destroy(Contact|int $contactId): RedirectResponse
     {
         $this->contactRepository->deleteModel($contactId);
-        return redirect()->route('contacts.index');
+        return redirect()->route('contact.index');
     }
 
     /**
@@ -74,7 +74,7 @@ class ContactController extends Controller
      */
     public function create(): View
     {
-        return view('contacts.create');
+        return view('contact.create');
     }
 
     /**
@@ -84,7 +84,7 @@ class ContactController extends Controller
     public function edit(Contact|int $contactId): View
     {
         $contact = $this->contactRepository->getModelByid($contactId);
-        return view('contacts.edit', compact('contact'));
+        return view('contact.edit', compact('contact'));
     }
 
 }

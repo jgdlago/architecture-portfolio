@@ -46,7 +46,7 @@
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
         </div>
-        
+
         </div>
     </div>
 </nav>
